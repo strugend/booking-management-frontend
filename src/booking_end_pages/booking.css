@@ -1,0 +1,227 @@
+
+/* booking conformation page */
+@media (min-width:421px){
+
+    .booking_confg_stamp_outline {
+      height: 225px;
+      background:#F6FBF4;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .booking_confg_stamp {
+      background-color: white;
+      width: 30%;
+      height: 150px;
+      border-radius: 5%;
+      text-align: left;
+    }
+    .booking_confg_inputs{
+      background:#F7F7F7;
+    }
+    .booking_confg_submit{
+      background:#F7F7F7;
+    }
+    .booking_confg_inputs h3{
+      margin-bottom: 5px;
+      position: relative;
+      text-align: left;
+      left: 35%;
+    }
+    .booking_confg_inputs input{
+      width: 30%;
+      height: 35px;
+      border-radius: 8px;
+      border: 1px solid;
+      border-color: #ECECEC;
+      margin-bottom: 5px;
+    }
+    .booking_confg_submit button{
+      margin: 30px;
+      width: 30%;
+      height: 50px;
+      border-radius: 8px;
+      border: 0px ;
+      background-color: #00917C;
+      font-size:larger;
+      color: white;
+    }
+    .booking_confg_submit button:hover {background-color: #3e8e41}
+    
+    .booking_confg_submit button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    
+    /* shift of heading of input header 1 */
+    .booking_confg_input1{
+      margin-top: 0px;
+    }
+    /* //////////////////////////////// */
+    .booking_confg_stamp p{
+      position: relative;
+      left: 15px;
+    }
+    .booking_confg_stamp h3{
+      position: relative;
+      left: 15px;
+      /* font-weight: 500; */
+    
+    }
+    
+    
+    .booking_upper{
+      height: 100px;
+      text-align: left;
+      margin-top: 50px;
+    }
+    .booking_upper h1{
+      position: relative;
+      left: 12%;
+      font-weight: 500;
+    }
+    .booking_upper2{
+      display: flex;
+      /* justify-content: space-around; */
+    
+    }
+    .booking_upper2 h2{
+      position: relative;
+      left: 33%;
+      
+    }
+    .booking_upper2 button{
+      
+      width: 10%;
+      height: 35px;
+      border-radius: 8px;
+      border: 0px ;
+      background-color: #00917C;
+      font-size:larger;
+      color: white;
+      position: relative;
+      top: 15px;
+      left: 12%;
+    }
+    .booking_upper2 button:hover {background-color: #3e8e41}
+    
+    .booking_upper2 button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    }
+    
+    
+    
+    @media (max-width:420px){
+      .booking_confg_stamp_outline {
+        height: 225px;
+        background:#F6FBF4;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .booking_confg_stamp {
+        background-color: white;
+        width: 90%;
+        height: 150px;
+        border-radius: 5%;
+        text-align: left;
+      }
+      .booking_confg_inputs{
+        background:#F6FBF4;
+      }
+      .booking_confg_submit{
+        background:#F7F7F7;
+        padding-bottom: 30px;
+      }
+      .booking_confg_inputs h3{
+        margin-bottom: 5px;
+        margin-top: 0px;
+        position: relative;
+      }
+      .booking_confg_inputs input{
+        width: 90%;
+        height: 35px;
+        border-radius: 8px;
+        border: 1px solid;
+        border-color: #ECECEC;
+        margin-bottom: 15px;
+      }
+      .booking_confg_submit button{
+        margin-top: 0px;
+        width: 90%;
+        height: 50px;
+        border-radius: 8px;
+        border: 0px ;
+        background-color: #00917C;
+        font-size:larger;
+        color: white;
+        align-items: center;
+        margin-top: 20px;
+      }
+    .booking_confg_submit button:hover {background-color: #3e8e41}
+    
+    .booking_confg_submit button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    .booking_confg_stamp p{
+        position: relative;
+        left: 15px;
+      }
+    .booking_confg_stamp h3{
+        position: relative;
+        left: 15px;
+      }
+      
+      /* shift of heading of inputs */
+    .booking_confg_inputs h3{
+      text-align: left;
+      left: 20px;
+    }
+    /* //////////////////////////////// */
+    .booking_upper{
+      height: 70px;
+      text-align: left;
+      padding-left: 20px;
+    }
+    .booking_upper2{
+      display: flex;
+      margin-left: 20px;
+      
+    }
+    .booking_upper2 button{
+      width: 20%;
+      height: 30px;
+      border-radius: 8px;
+      border: 0px ;
+      background-color: #00917C;
+      font-size:larger;
+      color: white;
+      align-items: center;
+      margin-top: 3px;
+    }
+    
+    .booking_upper2 button:hover {background-color: #3e8e41}
+    
+    .booking_upper2 button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    .booking_upper2 h2{
+      margin-top: 0px;
+      margin-left: 30px;
+    }
+    
+    
+    
+    }
