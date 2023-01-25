@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 import Url from "./Url";
+import Embed from "./Embed";
+import Wordp from "./Wordp";
+import Social from "./Social";
+import Butn from "./Butn";
 
 const style = {
   position: "absolute",
-  top: "30%",
+  top: "40%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 600,
@@ -20,8 +24,21 @@ const style = {
 
 function Apperance() {
   const [url, seturl] = useState("hide");
+
   const handlec = () => {
     seturl("show");
+  };
+  const handlecc = () => {
+    seturl("embed");
+  };
+  const wordpp = () => {
+    seturl("wordp");
+  };
+  const socialo = () => {
+    seturl("social");
+  };
+  const butto = () => {
+    seturl("but");
   };
   return (
     <Box sx={style}>
@@ -35,20 +52,27 @@ function Apperance() {
         <Grid item sx={{ fontSize: 18, cursor: "pointer" }} onClick={handlec}>
           URL
         </Grid>
-        <Grid item sx={{ fontSize: 18, cursor: "pointer" }}>
+        <Grid item sx={{ fontSize: 18, cursor: "pointer" }} onClick={handlecc}>
           Embed
         </Grid>
-        <Grid item sx={{ fontSize: 18, cursor: "pointer" }}>
+        <Grid item sx={{ fontSize: 18, cursor: "pointer" }} onClick={wordpp}>
           WordPress
         </Grid>
-        <Grid item sx={{ fontSize: 18, cursor: "pointer" }}>
+        <Grid item sx={{ fontSize: 18, cursor: "pointer" }} onClick={socialo}>
           Social
         </Grid>
-        <Grid item sx={{ fontSize: 18, cursor: "pointer" }}>
+        <Grid item sx={{ fontSize: 18, cursor: "pointer" }} onClick={butto}>
           Button
         </Grid>
       </Grid>
-      <Box>{url === "show" ? <Url /> : <h1>nothing</h1>}</Box>
+      <Box>
+        {url === "hide" ? <Url /> : ""}
+        {url === "show" ? <Url /> : ""}
+        {url === "embed" ? <Embed /> : ""}
+        {url === "wordp" ? <Wordp /> : ""}
+        {url === "social" ? <Social /> : ""}
+        {url === "but" ? <Butn /> : ""}
+      </Box>
     </Box>
   );
 }
