@@ -1,7 +1,8 @@
 import "./App.css";
 // import Booknav from "./Booknav";
 // import Grid from "@mui/material/Grid";
-import Booktable from "./Components/Booktable";
+// import Booktable from "./Components/Booktable";
+import Maincont from "./Components/Maincont";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
           <Booknav />
         </Grid>
       </Grid> */}
-      <Booktable />
+      {/* <Booktable /> */}
+      <Maincont />
     </>
   );
 }

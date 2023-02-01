@@ -27,9 +27,11 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 import But from "./Listbut";
 import Bookingform from "./Bookingform";
-// import Calte from "./Calte";
+import Calte from "./Calte";
 import Modal from "@mui/material/Modal";
 import Apperance from "../Apperanc/Apperance";
+import Notify from "../Notification/Notify";
+import Events from "../Notification/Events";
 
 const drawerWidth = 290;
 const drawerheight = "100vh";
@@ -37,13 +39,20 @@ const drawerheight = "100vh";
 export default function ClippedDrawer() {
   const [open, setOpen] = React.useState(false);
   const [open1, setOpen1] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
 
   const [openn, setOpenn] = React.useState(false);
+
+  const [book, setBook] = React.useState("booking");
+
   const handleOpenn = () => setOpenn(true);
   const handleClose = () => setOpenn(false);
 
   const handleClick = () => {
     setOpen(!open);
+  };
+  const butclick = () => {
+    setBook("notif");
   };
   const handleClick2 = () => {
     setOpen1(!open1);
@@ -78,6 +87,7 @@ export default function ClippedDrawer() {
           height: drawerheight,
           flexShrink: 0,
           padding: 0,
+          display: { xs: "none", lg: "block" },
           boxShadow: "5px 10px solid black",
           [`& .MuiDrawer-paper`]: {
             width: drawerWidth,
@@ -104,6 +114,9 @@ export default function ClippedDrawer() {
                   borderRadius: 2,
                   ":hover": { backgroundColor: "#2d3b45" },
                 }}
+                onClick={() => {
+                  setBook("booking");
+                }}
               >
                 <ListItemIcon>
                   <InboxIcon size="large" sx={{ color: "white" }} />
@@ -124,6 +137,9 @@ export default function ClippedDrawer() {
                   padding: 0.5,
                   borderRadius: 2,
                   ":hover": { backgroundColor: "#2d3b45" },
+                }}
+                onClick={() => {
+                  setBook("calender");
                 }}
               >
                 <ListItemIcon>
@@ -204,8 +220,11 @@ export default function ClippedDrawer() {
                 </List>
               </Collapse>
             </List>
-            <ListItem>
+            <List sx={{ paddingLeft: 2, paddingRight: 2 }}>
               <ListItemButton
+                onClick={() => {
+                  setOpen2(!open2);
+                }}
                 sx={{
                   height: 50,
                   marginTop: 1,
@@ -219,12 +238,49 @@ export default function ClippedDrawer() {
                 </ListItemIcon>
                 <ListItemText>
                   <Typography sx={{ fontWeight: "bold" }}>
-                    Notifications
+                    Notification
                   </Typography>
-                  <Typography>Emails,SMS & events</Typography>
+                  <Typography sx={{ fontSize: 13 }}>
+                    Emails, SMS & events
+                  </Typography>
                 </ListItemText>
+                {open2 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-            </ListItem>
+              <Collapse in={open2} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                  <ListItemButton
+                    sx={{
+                      pl: 4,
+                      height: 50,
+                      marginTop: 1,
+                      borderRadius: 2,
+                      ":hover": { backgroundColor: "#2d3b45" },
+                    }}
+                    onClick={butclick}
+                  >
+                    <ListItemText>
+                      <Typography>&nbsp;Action</Typography>
+                    </ListItemText>
+                  </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      pl: 4,
+                      height: 50,
+                      marginTop: 1,
+                      borderRadius: 2,
+                      ":hover": { backgroundColor: "#2d3b45" },
+                    }}
+                    onClick={() => {
+                      setBook("calend");
+                    }}
+                  >
+                    <ListItemText>
+                      <Typography>&nbsp;Calender Events</Typography>
+                    </ListItemText>
+                  </ListItemButton>
+                </List>
+              </Collapse>
+            </List>
             <ListItem>
               <ListItemButton
                 sx={{
@@ -307,7 +363,13 @@ export default function ClippedDrawer() {
         }}
       >
         <Toolbar />
-        <Bookingform />
+
+        {book === "booking" ? <Bookingform /> : ""}
+        {book === "calender" ? <Calte /> : ""}
+        {book === "notif" ? <Notify /> : ""}
+        {book === "calend" ? <Events /> : ""}
+        {/* <Bookingform /> */}
+        {/* { <Notify />} */}
         {/* <Calte /> */}
       </Box>
       <Box
@@ -316,6 +378,7 @@ export default function ClippedDrawer() {
           flexGrow: 1,
           p: 3,
           width: 500,
+          display: { xs: "none", lg: "block" },
           backgroundColor: "#232e35",
           color: "white",
         }}
