@@ -6,6 +6,8 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import MenuIcon from "@mui/icons-material/Menu";
 
+// appbar component
+
 function Navbar({ disp, handlec }) {
   return (
     <AppBar
