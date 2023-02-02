@@ -1,0 +1,160 @@
+.container {
+    background-color: rgb(36, 35, 35);
+    margin: auto;
+    width: 40vw;
+    color: white;
+    padding: 5px 25px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main20 {
+    background: black;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.main21 {
+    display: flex;
+    /* gap: 5rem; */
+    justify-content: space-around;
+}
+
+.main22 select {
+    background: black;
+    color: aliceblue;
+    height: 4vh;
+    margin-left: 10px;
+}
+
+.flexSpaceBetween1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexSpaceBetween {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(36, 35, 35);
+    ;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+.bt {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bt select {
+    background: black;
+    border-radius: 5px;
+    padding: 1px 5px;
+    cursor: pointer;
+}
+
+.main21 :nth-child(1) {
+    display: flex;
+    flex-direction: inherit;
+}
+
+.main23 {
+    padding: 12px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.margin {
+    margin-left: 12px;
+}
+
+.main22 h4 {
+    margin: 0;
+}
+
+.text :nth-child(1) {
+    margin: 0;
+    padding: 0;
+}
+
+.text :nth-child(2) {
+    margin: 0;
+    font-size: 15px;
+}
+
+.text :nth-child(3) {
+    margin: 0;
+    font-size: 15px;
+}
+
+.btn1 {
+    width: 78%;
+    margin-left: 55px !important;
+    margin-top: 5px !important;
+    background-color: rgb(54, 53, 53) !important;
+    border-radius: 35px !important;
+    color: azure !important;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 2px 5px;
+        width: 50vw;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .main20 {
+        padding: 4px;
+        margin: 3px;
+    }
+
+    .bt {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .bt p {
+        font-size: 12px;
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1px 3px;
+        width: 70vw;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .main20 {
+        padding: 3px;
+        margin: 2px;
+    }
+
+    .bt {
+        display: flex;
+        gap: 0.6rem;
+    }
+
+    .bt p {
+        font-size: 10px;
+        height: 3.5vh;
+    }
+}
