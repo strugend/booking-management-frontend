@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Dashboard from './Components/DASH-BOARD/Dashboard';
+// import DashboardPopup from './Components/DASH-BOARD/DashboardPopup';
+// import DashboardBookingPage from './Components/DASH-BOARD/Booking - page/DashboardBookingPage';
+// import MergeAllForms from './Components/DASH-BOARD/Booking - page/Dashboard-Sidebar/Forms/MergeAllForms';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Dashboard/>
+      {/* <DashboardPopup/> */}
+      {/* <DashboardBookingPage /> */}
+      {/* <MergeAllForms/> */}
     </div>
   );
 }

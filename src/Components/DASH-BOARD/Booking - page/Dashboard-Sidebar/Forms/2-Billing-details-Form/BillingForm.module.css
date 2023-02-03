@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1d2629;
+    --card: #232E35;
+    --card-border: #32414a;
+    --input: #1d2629;
+    --disabled: #232E35;
+    --input-border: #32414a;
+    --item-hover: #2d3b45;
+    --item-click: #32414a;
+    --item-selected: #354552;
+    --focus-outline: #788DF2;
+}
+
+/*  ----------------   Content   ---------------- */
+.content { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+    width: 500px;
+    padding: 32px;
+    padding-top: 60px;
+    position: relative;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    background-color: var(--card);
+}
+
+.functional_icons .back_icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.back_icon:hover {
+    background-color: var(--item-click);
+    border: 0px;
+    border-radius: 50%;
+}
+
+.functional_icons .clear_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.clear_icon:hover {
+    background-color: var(--item-click);
+    border: 0px;
+    border-radius: 50%;
+}
+
+.content h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+
+/*  ----------------   Form-Details   ---------------- */
+.content .form_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_details label {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.form_details label span {
+    font-size: 12px;
+    color: #BFC4C8;
+    margin-left: 5px;
+}
+
+.form_details * input {
+    color: #F4F5F7;
+    height: 40px;
+    line-height: 38px;
+    outline: #788DF2;
+    padding: 0px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    background-color: var(--input);
+}
+
+.form_details .flex_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.flex_row .col_1, .col_2 {
+    width: 48%;
+}
+
+.flex_row input {
+    width: 100%;
+}
+
+.form_details .flex_column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form_details .error_message {
+    color: #CB5763;
+    font-size: 12px;
+    text-align: start;
+}
+
+
+.form_details button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    background-color: #788DF2;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+}
+
+
+
+
+/*  ----------------   Footer   ---------------- */
+.content .footer {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer p span {
+    color: #788DF2;
+    cursor: pointer;
+}
+
+.footer .lock_icon {
+    font-size: 14px;
+    margin-right: 5px;
+}

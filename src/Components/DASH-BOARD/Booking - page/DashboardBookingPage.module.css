@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1d2629; 
+    --card: #232E35;
+    --card-border: #32414a;
+    --input: #1d2629;
+    --disabled: #232E35;
+    --button-background: #788DF2;
+    --input-border: #32414a;
+    --item-hover: #2d3b45;
+    --item-click: #32414a;
+    --item-selected: #354552;
+    --item-selected-hover: #2d3b45;
+}
+
+
+/*  ------------------   Container  ------------------ */
+.container {
+    color: #F4F5F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background-color: var(--background);
+}
+
+
+
+/*  ------------------   Content-1  ------------------ */
+.content_1 {
+    width: 72%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+/*  ------------------   Content-2  ------------------ */
+.content_2 {
+    width: 25%;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .content_1{
+        width: 68%;
+    }
+    .content_2{
+        width: 29%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .content_1{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .container .content_2{
+        width: 100%;
+    }
+
+}

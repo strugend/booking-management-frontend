@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1d2629;
+    --card: #232E35;
+    --card-border: #32414a;
+    --input: #1d2629;
+    --disabled: #232E35;
+    --input-border: #32414a;
+    --item-hover: #2d3b45;
+    --item-click: #32414a; 
+    --item-selected: #354552;
+    --focus-outline: #788DF2;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 500px;
+    color: #F4F5F7;
+    padding: 32px;
+    padding-top: 60px;
+    /* margin: 4rem 0px; */
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    position: relative;
+    background-color: var(--card);
+}
+
+
+
+/*  ----------------   Content   ---------------- */
+.functional_icons .back_icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.back_icon:hover {
+    background-color: var(--item-click);
+    border: 0px;
+    border-radius: 50%;
+}
+
+.functional_icons .clear_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.clear_icon:hover {
+    background-color: var(--item-click);
+    border: 0px;
+    border-radius: 50%;
+}
+
+.content>h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.content>p {
+    font-size: 14px;
+    background: var(--item-hover);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 4px 12px;
+}
+
+.content p span {
+    font-weight: 600;
+}
+
+
+
+
+/*  ----------------   Select-Currency   ---------------- */
+.content .select_currency {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.select_currency label {
+    text-align: start;
+    margin-bottom: 8px;
+}
+
+.select_currency select {
+    color: #F4F5F7;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    outline: none;
+    padding: 0px 36px 0px 8px;
+    background-color: var(--background)
+}
+
+
+
+
+/*  ----------------   Choose-plan   ---------------- */
+.content .choose_plan {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.choose_plan h3 {
+    text-align: start;
+    font-size: 16px;
+}
+
+
+.choose_plan .radio_box {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 1px;
+    border: 1px solid var(--card-border);
+}
+
+.radio_box:hover {
+    background-color: var(--item-hover);
+}
+
+.radio_box .radio_btn_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 8px;
+}
+
+.radio_btn_info h3 {
+    width: 100%;
+    font-size: 16px;
+    text-align: start;
+}
+
+.radio_btn_info h3 span {
+    font-size: 12px;
+    border-radius: 5px;
+    color: #788DF2;
+    padding: 2px 4px;
+    margin-left: 5px;
+    background-color: #34405a;
+}
+
+.radio_btn_info p {
+    width: 100%;
+    font-size: 14px;
+    text-align: start;
+}
+
+
+
+
+/*  ----------------   Footer   ---------------- */
+.content .footer {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.footer button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    background-color: #788DF2;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer p span {
+    color: #788DF2;
+    cursor: pointer;
+}
+
+.footer .lock_icon {
+    font-size: 14px;
+    margin-right: 5px;
+}
