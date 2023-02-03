@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ 
+.container {
+    border: 1px solid var(--input-border);
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content .logo {
+    font-size: 60px;
+    margin-right: 20px;
+}
+
+
+.content .user_info p {
+    text-align: start;
+    font-size: 14px;
+}
+
+.content .user_info .user_name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.icons_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_list .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}

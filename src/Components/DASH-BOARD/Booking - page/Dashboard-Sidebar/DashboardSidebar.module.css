@@ -1,0 +1,242 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1d2629;
+    --card: #232E35;
+    --card-border: #32414a;
+    --input: #1d2629;
+    --disabled: #232E35;
+    --button-background: #788DF2;
+    --input-border: #32414a;
+    --item-hover: #2d3b45;
+    --item-click: #32414a;
+    --item-selected: #354552; 
+    --item-selected-hover: #2d3b45;
+}
+
+.icons {
+    font-size: 18px !important;
+}
+
+.content_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_2>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-size: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    color: var(--disabled);
+    background-color: var(--button-background);
+    border-radius: 1rem;
+}
+
+.content_2>button .icons {
+    color: black;
+    background-color: var(--button-background);
+    margin-right: 8px;
+}
+
+
+/*  --------   Create-Folder   -------- */
+.content_2 .create_folder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    background-color: var(--card);
+}
+
+.create_folder .folder_icons {
+    margin: 0px 8px;
+    font-size: 2rem;
+    color: var(--button-background);
+}
+
+.create_folder>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8px;
+}
+
+.create_folder div>h3 {
+    text-align: start;
+    font-size: 16px;
+}
+
+.create_folder div>p {
+    text-align: start;
+    color: #D4DBE0;
+    font-size: 14px;
+}
+
+
+/*  --------   Free-trial   -------- */
+.content_2 .free_trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--card);
+}
+
+.free_trial .stars_icons {
+    color: rgb(255, 172, 51);
+    ;
+    font-size: 48px;
+    margin: 20px 0px;
+}
+
+.free_trial h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.free_trial p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.free_trial .inside_box {
+    background-color: var(--background);
+    border-radius: 8px;
+    margin: 16px 0px;
+    padding: 0px 16px;
+}
+
+.inside_box h4 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-align: start;
+}
+
+.inside_box .icons {
+    color: #579b79;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.inside_box p {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.free_trial button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    line-height: 40px;
+    font-size: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--disabled);
+    background-color: var(--button-background);
+    border-radius: 1rem;
+    border: none;
+}
+
+.free_trial button .icons {
+    margin-right: 6px;
+}
+
+
+/*  --------   Information   -------- */
+.content_2 .information {
+    width: 100%;
+}
+
+.content_2 .information .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 16px 16px 8px;
+    margin: 16px 0px;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    background-color: var(--card);
+}
+
+.info .arrow_icons {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.info h3 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.info p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    color: #788DF2;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: start;
+}
+
+.info p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    .content_2 {
+        width: 100%;
+    }
+
+    .content_2 .create_folder {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .content_2 .free_trial {
+        width: 100%;
+    }
+}
