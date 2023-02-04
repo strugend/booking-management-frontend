@@ -40,11 +40,8 @@ export default function ClippedDrawer() {
   const [open, setOpen] = React.useState(false);
   const [open1, setOpen1] = React.useState(false);
   const [open2, setOpen2] = React.useState(false);
-
   const [openn, setOpenn] = React.useState(false);
-
   const [book, setBook] = React.useState("booking");
-
   const handleOpenn = () => setOpenn(true);
   const handleClose = () => setOpenn(false);
 

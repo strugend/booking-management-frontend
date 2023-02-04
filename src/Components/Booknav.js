@@ -28,6 +28,8 @@ import {
   TableRow,
 } from "@mui/material";
 
+//this component is bookings table
+
 const options = ["Any status", "Undecided", "Cancelled", "No show"];
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({

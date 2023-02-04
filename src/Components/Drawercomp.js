@@ -25,7 +25,8 @@ import Modal from "@mui/material/Modal";
 import { useNavigate } from "react-router-dom";
 import Apperance from "../Apperanc/Apperance";
 
-const drawerWidth = 290;
+const drawerWidth = 317;
+// const drawer = 650;
 const drawerheight = "100vh";
 
 function Drawercomp({ disp }) {
@@ -47,14 +48,14 @@ function Drawercomp({ disp }) {
     <Drawer
       variant="permanent"
       sx={{
-        width: drawerWidth,
+        width: { lg: 290, xs: 330 },
         height: drawerheight,
         flexShrink: 0,
         padding: 0,
         display: { xs: disp, lg: "block" },
         boxShadow: "5px 10px solid black",
         [`& .MuiDrawer-paper`]: {
-          width: drawerWidth,
+          width: { lg: 290, xs: 370 },
           boxSizing: "border-box",
         },
       }}
@@ -65,7 +66,7 @@ function Drawercomp({ disp }) {
           backgroundColor: "#232e35",
           color: "white",
           position: "relative",
-          height: "100%",
+          height: "200%",
         }}
       >
         <List>
@@ -79,6 +80,7 @@ function Drawercomp({ disp }) {
                 borderRadius: 2,
                 ":hover": { backgroundColor: "#2d3b45" },
               }}
+              selected
               onClick={() => {
                 navigate("/general");
               }}

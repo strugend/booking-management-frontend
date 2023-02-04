@@ -2,6 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+// import Calender_Teams from "./CalenderTeams";
 function Thirdpart() {
   return (
     <Box
@@ -16,7 +17,8 @@ function Thirdpart() {
       }}
     >
       <Toolbar />
-      <Typography>Date selector will come here </Typography>
+      {/* <Calender_Teams /> */}
+      <Typography>date selector will come here</Typography>
     </Box>
   );
 }

@@ -6,7 +6,7 @@ import * as React from "react";
 
 export default function BasicCard() {
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box width={{ lg: "100%", xs: "100%" }}>
       <Typography fontWeight={"bold"} mb={2}>
         Linked Calender
       </Typography>
@@ -35,7 +35,11 @@ export default function BasicCard() {
           </Box>
           <Box>
             <Button
-              sx={{ backgroundColor: "#1d2629", width: "100%", height: "100%" }}
+              sx={{
+                backgroundColor: "#1d2629",
+                width: "100%",
+                height: "100%",
+              }}
             >
               Edit
             </Button>

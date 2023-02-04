@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 // appbar component
 
@@ -18,10 +19,17 @@ function Navbar({ disp, handlec }) {
       }}
     >
       <Toolbar>
-        <MenuIcon
-          sx={{ cursor: "pointer", display: { lg: "none", xs: "block" } }}
-          onClick={handlec}
-        />
+        {disp === "none" ? (
+          <MenuIcon
+            sx={{ cursor: "pointer", display: { lg: "none", xs: "block" } }}
+            onClick={handlec}
+          />
+        ) : (
+          <CloseIcon
+            sx={{ cursor: "pointer", display: { lg: "none", xs: "block" } }}
+            onClick={handlec}
+          />
+        )}
         <Button sx={{ color: "white" }}>
           <ArrowBackIosIcon sx={{ fontSize: 15 }} /> Back
         </Button>

@@ -23,16 +23,16 @@ function Maincont() {
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <Navbar disp={disp} handlec={handlec} />
-        <Drawercomp disp={disp} />
+        <Drawercomp disp={disp} handlec={handlec} />
         <Box
           component="main"
           sx={{
             flexGrow: 1,
-            p: 3,
+            p: { lg: 3, xs: 2 },
             backgroundColor: "#232e35",
             color: "white",
-            maxHeight: "100%",
           }}
+          display={disp === "block" ? "none" : "block"}
         >
           <Toolbar />
           <Routes>

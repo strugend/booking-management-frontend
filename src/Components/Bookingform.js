@@ -6,7 +6,7 @@ import InputBase from "@mui/material/InputBase";
 import Button from "@mui/material/Button";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import TextareaAutosize from "@mui/base/TextareaAutosize";
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 import FormatItalicIcon from "@mui/icons-material/FormatItalic";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import FormatBoldIcon from "@mui/icons-material/FormatBold";
@@ -55,7 +55,7 @@ function Bookingform() {
         &nbsp;Booking page Title
       </Typography>
       <Grid container>
-        <Grid item lg={2} justifyContent="center">
+        <Grid item lg={2} xs={3} justifyContent="center">
           <Button
             variant="text"
             component="label"
@@ -72,7 +72,7 @@ function Bookingform() {
             <input hidden accept="image/*" multiple type="file" />
           </Button>
         </Grid>
-        <Grid item lg={10}>
+        <Grid item lg={10} xs={9}>
           <BootstrapInput
             placeholder="Name"
             sx={{ width: "98%", height: 50 }}
@@ -91,10 +91,10 @@ function Bookingform() {
         borderRadius={2}
         mt={1}
       >
-        <Grid item lg={9}>
+        <Grid item lg={9} xs={7}>
           <BootstrapInput sx={{ width: "98%" }} id="bootstrap-input" />
         </Grid>
-        <Grid item lg={3}>
+        <Grid item lg={3} xs={5} textAlign="center">
           .youcanbook.me
         </Grid>
       </Grid>
@@ -107,7 +107,11 @@ function Bookingform() {
         borderRadius={2}
       >
         <Box
-          sx={{ width: "100%", borderBottom: 0.0001, borderColor: "  #32414a" }}
+          sx={{
+            width: "100%",
+            borderBottom: 0.0001,
+            borderColor: "  #32414a",
+          }}
         >
           <Typography>
             <Button sx={{ width: 10, textAlign: "left", color: "white" }}>
