@@ -6,6 +6,8 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import Success from './components/auth/Success';
 import LoginQ1 from './components/auth/LoginQ1';
 import LoginQ2 from './components/auth/LoginQ2';
+import Maincont from './components/BookingForm/Maincont';
+import BookingDashboard from './components/BookingDashboard/Dashboard';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/success' element={<Success/>}/>
         <Route path='/loginq2' element={<LoginQ2/>}/>
+        {/* <Route path='/bookingform' element={<Maincont/>}/> */}
+        <Route path='/bookingform' element={<BookingDashboard/>}/>
       </Routes>
       </Router>
     </div>
