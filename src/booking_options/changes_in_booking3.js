@@ -18,12 +18,15 @@ const Div = styled('div')(({ theme }) => ({
 
 function Changes(){
 
-    const [Currency, setAge] = React.useState('');
-
-    const handleChange = (event) => {
-      setAge(event.target.value);
+    const [Currency, setCurrency] = React.useState('');
+    const handleChangeCurrency = (event) => {
+      setCurrency(event.target.value);
     };
-
+    const [amount, setAmount] = React.useState('');
+    // console.log(amount);
+    const handleChangeAmount= (event) => {
+      setAmount(event.target.value);
+    };
 
 
     return(
@@ -45,12 +48,12 @@ function Changes(){
                 id="demo-simple-select"
                 value={Currency}
                 label="Currency"
-                onChange={handleChange}
+                onChange={handleChangeCurrency}
                 placeholder = "Enter age"
                 >
-                <MenuItem value={10}>U.S. Dollar</MenuItem>
-                <MenuItem value={20}>Indian Rupee</MenuItem>
-                <MenuItem value={30}>Euro</MenuItem>
+                <MenuItem value={1}>US_Dollar</MenuItem>
+                <MenuItem value={2}>Indian Rupee</MenuItem>
+                <MenuItem value={3}>Euro</MenuItem>
                 </Select>
             </FormControl>
         </Grid>
@@ -64,6 +67,7 @@ function Changes(){
                     id="formatted-numberformat-input"
                     // InputProps={{
                     // inputComponent: NumberFormatCustom,
+                    onChange={handleChangeAmount}
                     // }}
                     variant="standard"
                 />

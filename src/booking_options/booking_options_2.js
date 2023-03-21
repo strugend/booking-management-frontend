@@ -14,7 +14,6 @@ import Grid from '@mui/material/Grid';
 
 function Booking_options_2(){
     const [state, setState] = React.useState('');
-
     const handleChange = () => {
         setState();
       };
@@ -45,6 +44,7 @@ function Booking_options_2(){
           variant="filled"
           fullWidth = "true"
           label= "Write a confirmation message"
+          onChange={handleChange}
         />
     </CardContent>
     <CardActions>
@@ -64,48 +64,6 @@ const darkTheme = createTheme({
   });
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-
-/* <React.Fragment>
-    <CardContent>
-    <Typography sx={{ fontSize: 16, textAlign:'left', marginLeft: "12px" }} color="text.secondary" gutterBottom>
-        After booking is made
-    </Typography>
-    <Grid container spacing={0}>
-    <Grid item xs={0} md={0}>
-    <Checkbox {...label} defaultChecked/>
-    </Grid>
-    <Grid item xs={6} md={4}>
-    <Typography sx={{ fontSize: 16, marginTop: "10px"}} color="text.secondary" gutterBottom>
-        Display confirmation
-    </Typography>
-    </Grid>
-    </Grid>
-    <TextField
-          id="filled-multiline-static"
-          label="Confirmation message"
-          multiline
-          rows={8}
-          defaultValue={state}
-          variant="filled"
-          fullWidth = "true"
-        />
-    </CardContent>
-    <CardActions>
-    <Button size="large" variant="outlined" href="#" fullWidth = "true" color="inherit">Route to new URL</Button>
-    </CardActions>
-</React.Fragment>
-); */
-
-// function Booking_options_2(){
-
-// return(
-//     <div>
-//         <ThemeProvider theme={darkTheme}>      
-//             <Card variant="outlined" sx={{maxWidth: 600}}>{card}</Card>
-//         </ThemeProvider>  
-// </div>
-// )
-// }
 
 export default Booking_options_2;
 

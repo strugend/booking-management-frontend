@@ -6,6 +6,7 @@ import { CardActions, Grid } from '@mui/material';
 import Switch from '@mui/material/Switch';
 import Button from '@mui/material/Button';
 import Changes from './changes_in_booking3'
+// importing the textfield and scroll bar saved in above file path
 import { grey, purple } from '@mui/material/colors';
 
 

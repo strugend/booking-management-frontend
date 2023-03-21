@@ -2,6 +2,7 @@ import React from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import Changes_in_booking1 from "./changes_in_booking1";
+// Changes_in_booking1 include the reusebale component of the bookingform 1
 import { CardActions, Grid } from "@mui/material";
 import Typography from '@mui/material/Typography';
 import Switch from '@mui/material/Switch';
@@ -23,6 +24,12 @@ const theme = createTheme({
             mode: 'dark'
           },
   });
+
+  //////////////////////////////////////// Note///////////////////////
+//   these fields in the form are not editable as acc to excel sheet these input fields meintioned are 
+//   not changeable or modifiable but for look replication purpose they have delete and overwrite button
+/////////////////////////////////////////////////////////////////////
+
 
 export default function Booking_options_1(){
 // state of slider

@@ -1,10 +1,8 @@
-// import { style } from "@mui/system";
 import React from "react";
 import css from "./booking.css"
 
-// style={{position: "absolute", left: "150px", top: "50px",}}
 function ConfirmBooking(){  
-    // const classes = useStyles();
+    
 
     return(
         <div>

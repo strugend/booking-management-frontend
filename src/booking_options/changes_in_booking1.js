@@ -14,7 +14,7 @@ function Changes_in_booking1(props){
     return(<div>
         <Paper
         component="form"
-        sx={{ m: '15px 15px', display: 'flex', alignItems: 'center', width: 550, border: 1, borderBlockColor: 'grey'}}>
+        sx={{ m: '15px 15px', display: 'flex', alignItems: 'center',   width: '93%', border: 1, borderBlockColor: 'grey'}}>
         <IconButton sx={{ p: '13px' }} aria-label="menu">
         <HeightIcon />
         </IconButton>
