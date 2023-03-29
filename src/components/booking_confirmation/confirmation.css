@@ -1,0 +1,165 @@
+body{
+    background-color:#F6FBF4; 
+}
+@media (min-width:421px){
+.upper_conf_part{
+    height: 200px;
+    background-color:white;
+    text-align: left;
+    margin-top: 0px;
+}
+.upper_conf_part h1{
+    position: relative;
+    left: 12%;
+    top: 20%;
+    font-weight: 500;
+}
+
+.lower_conf_part{
+    /* height: 225px; */
+    background:#F6FBF4;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.lower_conf_inner{
+    width: 35%;
+    height: 175px;
+    background-color: white;
+  /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+}
+.header_conf{
+    margin-top: 0px;;
+}
+
+.bottom_conf{
+    position: relative;
+    top:20em;
+    text-align: centre;
+    font-weight: 500;
+}
+.thanks_para{
+    margin-top: 0px;
+}
+
+/* button style */
+.btn {
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #00917C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    margin-top: 20px;
+   }
+   
+   .btn:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+     0 15px 0 -4px #39a2db,
+     0 16px 10px -3px #39a2db;
+   }
+   
+   .btn:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+     0 8px 0 -4px #39a2db,
+     0 12px 10px -3px #39a2db;
+   }
+
+   /* button style end */
+}
+
+@media (max-width:420px){
+.upper_conf_part{
+    height: 100px;
+    background-color:white;
+    text-align: left;
+    margin-top: 0px;
+}
+.upper_conf_part h1{
+    position: relative;
+    left: 12%;
+    top: 20%;
+    font-weight: 500;
+}
+
+.lower_conf_part{
+    /* height: 225px; */
+    background:#F6FBF4;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.lower_conf_inner{
+    width: 80%;
+    height: 160px;
+    background-color: white;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+}
+.header_conf{
+    margin-top: 0px;;
+}
+
+.bottom_conf{
+    position: relative;
+    top:20em;
+    text-align: centre;
+    font-weight: 500;
+}
+.thanks_para{
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* button style */
+.btn {
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #00917C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    margin-top: 20px;
+    }
+    
+    .btn:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+        0 15px 0 -4px #39a2db,
+        0 16px 10px -3px #39a2db;
+    }
+    
+    .btn:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+        0 8px 0 -4px #39a2db,
+        0 12px 10px -3px #39a2db;
+    }
+
+    /* button style end */
+    
+}
